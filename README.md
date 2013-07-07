@@ -9,4 +9,5 @@ Installation
 ========================
 
 install EmguCV: http://www.emgu.com/wiki/index.php/Main_Page
+
 create a tessdata directory on your C: drive
