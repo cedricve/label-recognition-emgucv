@@ -3,8 +3,7 @@ Label Recognition at ArcelorMittal
 
 This application is a tool created for my master thesis to prevent stock swaps in the production halls of ArcelorMittal. Image Processing (OpenCV, EmguCV) is used to automatically locate the ID of the material and OCR (Tesseract) to recognize the ID.
 
-![alt text](http://www.cedricve.me/wp-content/uploads/2013/07/K00037722979S_31_07_2013-14_02_20-e1375278547128.jpg "Material")
-![alt text](http://www.cedricve.me/wp-content/uploads/2013/07/K00037785642S_31_07_2013-13_52_16-e1375278470382.jpg "Material")
+![alt text](http://www.cedricve.me/wp-content/uploads/2013/07/K00037722979S_31_07_2013-14_02_20-e1375278547128.jpg "Material") ![alt text](http://www.cedricve.me/wp-content/uploads/2013/07/K00037785642S_31_07_2013-13_52_16-e1375278470382.jpg "Material")
 
 More information can be found on: www.cedricve.me/master-thesis
 
