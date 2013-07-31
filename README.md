@@ -7,10 +7,10 @@ More information can be found on: www.cedricve.me/master-thesis
 Installation
 ========================
 
-1. After you cloned the directory you have to install EmguCV (EmguCV: http://www.emgu.com/wiki/index.php/Main_Page).
+1. After you cloned the directory you have to install EmguCV (http://sourceforge.net/projects/emgucv/files/emgucv/2.3.0/libemgucv-windows-x86-2.3.0.1416.exe/download).
 2. Open the solution.
   1. Right click on References, select Add Reference.
-  2. Search for your EmguCV directory (defaut C:\Emgu).
+  2. Search for your EmguCV directory (default C:\Emgu).
   3. Select your EmguCV version (C:\Emgu\emgucv-windows-x86 2.3.0.1416).
   4. Open the bin directory.
   5. Select all dll's with prefix "Emgu.CV.".
