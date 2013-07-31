@@ -5,7 +5,7 @@ This application is a tool created for my master thesis to prevent stock swaps i
 
 ![alt text](http://www.cedricve.me/wp-content/uploads/2013/07/K00037722979S_31_07_2013-14_02_20.jpg "Material")
 
-![alt text](http://www.cedricve.me/wp-content/uploads/2013/07/K00037785642S_31_07_2013-13_52_16.jpg "Material")
+![alt text](http://www.cedricve.me/wp-content/uploads/2013/07/K00037785642S_31_07_2013-13_52_16-e1375278470382.jpg "Material")
 
 More information can be found on: www.cedricve.me/master-thesis
 
