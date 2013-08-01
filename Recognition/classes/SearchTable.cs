@@ -14,14 +14,14 @@ namespace Recognition
         private List<PointW> searchTable;
 
         // Maximal frequency a point can get
-        private int highboundFrequency = 10;
+        private int upperLimitFrequency = 10;
 
         private PointW mostCommon;
         private int mostCommonFrequency = 0;
 
-        public SearchTable(int highboundFrequency)
+        public SearchTable(int upperLimitFrequency)
         {
-            this.highboundFrequency = highboundFrequency;
+            this.upperLimitFrequency = upperLimitFrequency;
             searchTable = new List<PointW>();
         }
 
@@ -59,7 +59,7 @@ namespace Recognition
             {
                 if (p.closeEnough(nearest, maxDistanceBetweenPoints))
                 {
-                    if (nearest.frequency < highboundFrequency)
+                    if (nearest.frequency < upperLimitFrequency)
                         nearest.frequency++;
                     return nearest;
                 }
