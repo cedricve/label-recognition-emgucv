@@ -318,7 +318,7 @@ namespace Recognition
                             mostCommon = mostCommonPoint;
                 }
 
-                // Draw the region of the mostcommong point (red rect)
+                // Draw the region of the mostCommon point (red rect)
                 if (mostCommon.p.X != 0 && mostCommon.p.Y != 0)
                 {
                     // Calculate the size of the label at the mostcommon point
