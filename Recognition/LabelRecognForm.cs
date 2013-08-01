@@ -274,6 +274,7 @@ namespace Recognition
             using (MemStorage storage = new MemStorage())
             {
                 PointW bestPoint = new PointW();
+                Rectangle currentBest = new Rectangle();
                 // Start border following: get the connected components (Contour<Point> contours)
                 for (Contour<Point> contours = result.FindContours(); contours != null; contours = contours.HNext)
                 {
@@ -284,10 +285,13 @@ namespace Recognition
                     // Check if the rectangle matches the expected size of label
                     if (
                         rect.Width > Int32.Parse(txtLabelWidth.Text) - Int32.Parse(txtLabelFault.Text) && rect.Width < Int32.Parse(txtLabelWidth.Text) + Int32.Parse(txtLabelFault.Text)
-                        && rect.Height > Int32.Parse(txtLabelHeight.Text) - Int32.Parse(txtLabelFault.Text) && rect.Height < Int32.Parse(txtLabelHeight.Text) + Int32.Parse(txtLabelFault.Text))
+                        && rect.Height > Int32.Parse(txtLabelHeight.Text) - Int32.Parse(txtLabelFault.Text) && rect.Height < Int32.Parse(txtLabelHeight.Text) + Int32.Parse(txtLabelFault.Text)
+                        // If better then currentBest
+                        && currentBest.Width < rect.Width && current.Height < rect.Height)
+                        )
                     {
-                        PointF centerRect = new PointF(rect.X + rect.Width / 2, rect.Y + rect.Height / 2);
-                        bestPoint.p = centerRect;
+                        bestPoint.p = new PointF(rect.X + rect.Width / 2, rect.Y + rect.Height / 2);
+                        currentBest = rect;
                     }
                 }
 
