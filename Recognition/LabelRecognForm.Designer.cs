@@ -123,6 +123,8 @@
             this.txtDilate.Name = "txtDilate";
             this.txtDilate.Size = new System.Drawing.Size(100, 20);
             this.txtDilate.TabIndex = 6;
+            this.txtDilate.Tag = "dilate";
+            this.txtDilate.TextChanged += new System.EventHandler(this.updateRecognition);
             // 
             // lblErode
             // 
@@ -139,6 +141,8 @@
             this.txtErode.Name = "txtErode";
             this.txtErode.Size = new System.Drawing.Size(100, 20);
             this.txtErode.TabIndex = 9;
+            this.txtErode.Tag = "erode";
+            this.txtErode.TextChanged += new System.EventHandler(this.updateRecognition);
             // 
             // txtLabelHeight
             // 
@@ -146,6 +150,8 @@
             this.txtLabelHeight.Name = "txtLabelHeight";
             this.txtLabelHeight.Size = new System.Drawing.Size(100, 20);
             this.txtLabelHeight.TabIndex = 12;
+            this.txtLabelHeight.Tag = "label_height";
+            this.txtLabelHeight.TextChanged += new System.EventHandler(this.updateRecognition);
             // 
             // txtLabelWidth
             // 
@@ -153,6 +159,8 @@
             this.txtLabelWidth.Name = "txtLabelWidth";
             this.txtLabelWidth.Size = new System.Drawing.Size(100, 20);
             this.txtLabelWidth.TabIndex = 13;
+            this.txtLabelWidth.Tag = "label_width";
+            this.txtLabelWidth.TextChanged += new System.EventHandler(this.updateRecognition);
             // 
             // lblLabelWidth
             // 
@@ -187,6 +195,8 @@
             this.txtLabelFault.Name = "txtLabelFault";
             this.txtLabelFault.Size = new System.Drawing.Size(100, 20);
             this.txtLabelFault.TabIndex = 17;
+            this.txtLabelFault.Tag = "label_height";
+            this.txtLabelFault.TextChanged += new System.EventHandler(this.updateRecognition);
             // 
             // btnOpenFile
             // 
@@ -246,6 +256,8 @@
             this.txtGaussianStd1.Name = "txtGaussianStd1";
             this.txtGaussianStd1.Size = new System.Drawing.Size(100, 20);
             this.txtGaussianStd1.TabIndex = 27;
+            this.txtGaussianStd1.Tag = "gaussuan_smt";
+            this.txtGaussianStd1.TextChanged += new System.EventHandler(this.updateRecognition);
             // 
             // txtGaussianStd2
             // 
@@ -253,6 +265,8 @@
             this.txtGaussianStd2.Name = "txtGaussianStd2";
             this.txtGaussianStd2.Size = new System.Drawing.Size(100, 20);
             this.txtGaussianStd2.TabIndex = 28;
+            this.txtGaussianStd2.Tag = "gaussuan_smt2";
+            this.txtGaussianStd2.TextChanged += new System.EventHandler(this.updateRecognition);
             // 
             // lblGaussianStd1
             // 
@@ -316,6 +330,8 @@
             this.txtMaximumChars.Name = "txtMaximumChars";
             this.txtMaximumChars.Size = new System.Drawing.Size(100, 20);
             this.txtMaximumChars.TabIndex = 34;
+            this.txtMaximumChars.Tag = "max_char";
+            this.txtMaximumChars.TextChanged += new System.EventHandler(this.updateRecognition);
             // 
             // txtMinimumChars
             // 
@@ -323,6 +339,8 @@
             this.txtMinimumChars.Name = "txtMinimumChars";
             this.txtMinimumChars.Size = new System.Drawing.Size(100, 20);
             this.txtMinimumChars.TabIndex = 33;
+            this.txtMinimumChars.Tag = "min_char";
+            this.txtMinimumChars.TextChanged += new System.EventHandler(this.updateRecognition);
             // 
             // lblMemoryParameters
             // 
@@ -359,6 +377,8 @@
             this.txtHighboundFrequency.Name = "txtHighboundFrequency";
             this.txtHighboundFrequency.Size = new System.Drawing.Size(100, 20);
             this.txtHighboundFrequency.TabIndex = 39;
+            this.txtHighboundFrequency.Tag = "highbound_frequency";
+            this.txtHighboundFrequency.TextChanged += new System.EventHandler(this.updateRecognition);
             // 
             // txtMaxDistance
             // 
@@ -366,6 +386,8 @@
             this.txtMaxDistance.Name = "txtMaxDistance";
             this.txtMaxDistance.Size = new System.Drawing.Size(100, 20);
             this.txtMaxDistance.TabIndex = 38;
+            this.txtMaxDistance.Tag = "max_distance_between_points";
+            this.txtMaxDistance.TextChanged += new System.EventHandler(this.updateRecognition);
             // 
             // Herkenning
             // 
@@ -418,6 +440,8 @@
             this.txtRoiX.Name = "txtRoiX";
             this.txtRoiX.Size = new System.Drawing.Size(100, 20);
             this.txtRoiX.TabIndex = 47;
+            this.txtRoiX.Tag = "roi_x";
+            this.txtRoiX.TextChanged += new System.EventHandler(this.updateRecognition);
             // 
             // label2
             // 
@@ -435,6 +459,8 @@
             this.txtRoiY.Name = "txtRoiY";
             this.txtRoiY.Size = new System.Drawing.Size(100, 20);
             this.txtRoiY.TabIndex = 49;
+            this.txtRoiY.Tag = "roi_y";
+            this.txtRoiY.TextChanged += new System.EventHandler(this.updateRecognition);
             // 
             // label3
             // 
@@ -452,6 +478,8 @@
             this.txtRoiWidth.Name = "txtRoiWidth";
             this.txtRoiWidth.Size = new System.Drawing.Size(100, 20);
             this.txtRoiWidth.TabIndex = 51;
+            this.txtRoiWidth.Tag = "roi_width";
+            this.txtRoiWidth.TextChanged += new System.EventHandler(this.updateRecognition);
             // 
             // label4
             // 
@@ -469,6 +497,8 @@
             this.txtRoiHeight.Name = "txtRoiHeight";
             this.txtRoiHeight.Size = new System.Drawing.Size(100, 20);
             this.txtRoiHeight.TabIndex = 53;
+            this.txtRoiHeight.Tag = "roi_height";
+            this.txtRoiHeight.TextChanged += new System.EventHandler(this.updateRecognition);
             // 
             // label5
             // 

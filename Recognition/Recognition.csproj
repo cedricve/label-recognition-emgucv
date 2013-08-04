@@ -65,9 +65,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="classes\Parameters.cs" />
+    <Compile Include="classes\Property.cs" />
     <Compile Include="classes\LGD.cs" />
     <Compile Include="classes\PointW.cs" />
+    <Compile Include="classes\Recognition.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="LabelRecognForm.cs">
       <SubType>Form</SubType>
