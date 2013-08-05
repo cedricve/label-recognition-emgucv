@@ -13,8 +13,8 @@
   <gaussuan_smt2>2.5</gaussuan_smt2>
   <!-- Rolnummer eigenschappen -->
   <label_width>40</label_width>
-  <label_height>26</label_height>
-  <label_fault>12</label_fault>
+  <label_height>30</label_height>
+  <label_fault>14</label_fault>
   <!-- SearchTable: Interval tussen punten en maximum frequencie -->
   <highbound_frequency>30</highbound_frequency>
   <max_distance_between_points>300</max_distance_between_points>

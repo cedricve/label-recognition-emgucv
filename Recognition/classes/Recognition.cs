@@ -173,13 +173,12 @@ namespace Recognition
                         rect.Width > labelWidth - labelFault && rect.Width < labelWidth + labelFault
                         && rect.Height > labelHeight - labelFault && rect.Height < labelHeight + labelFault
                         // If approximate ratio
-                        && rectRatio >= ratioLabel - 2 && rectRatio <= ratioLabel 
+                        && rectRatio >= ratioLabel - 2 && rectRatio <= ratioLabel + 2
                         // If better then currentBest
-                        && Math.Abs(rectRatio-ratioLabel) < currentBest
+                        && rectRatio < currentBest
                         )
                     {
-                        Console.WriteLine(rectRatio);
-                        currentBest = Math.Abs(rectRatio - ratioLabel);
+                        currentBest = rectRatio;
                         bestPoint.p = new PointF(rect.X + rect.Width / 2, rect.Y + rect.Height / 2); ;
                     }
                 }
