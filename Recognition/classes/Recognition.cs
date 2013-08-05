@@ -115,10 +115,9 @@ namespace Recognition
         /// </summary>
         /// <param name="expectedMaterialID"></param>
         /// <returns>true if recognized</returns>
-
         public bool executeRecognition(string imageId, string imagePath, string crane, string expectedMaterialID)
         {
-            // Get image from path with region of interest
+            // Get image from path
             cap = new Capture(imagePath);
             Image<Bgr,byte> img = cap.QueryFrame();
             return executeRecognition(imageId, img, crane, expectedMaterialID);
@@ -129,7 +128,7 @@ namespace Recognition
             // reset LGD 
             lgd.isEqual = false;
 
-            // Crop Image
+            // Crop Image with region of interest
             img = img.Copy(regionOfInterest);
 
             // Convert to grayscale
