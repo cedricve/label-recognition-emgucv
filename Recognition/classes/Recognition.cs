@@ -183,7 +183,6 @@ namespace Recognition
                         bestPoint.p = new PointF(rect.X + rect.Width / 2, rect.Y + rect.Height / 2); ;
                     }
                 }
-                Console.WriteLine("---");
                 // If a bestpoint is found:
                 //  - draw a green rect on the image.
                 //  - look for the nearest point (increase it's frequency, or add as new point).
