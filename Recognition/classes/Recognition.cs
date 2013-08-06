@@ -172,7 +172,7 @@ namespace Recognition
                     // Check if the rectangle matches the expected size of label
                     if (
                         // If approximate size
-			            rectDifference <= labelFault
+                        rectDifference <= labelFault
                         // Area check with Formula of Green (with 35% error rate)
                         && contours.Area / rectArea >= 0.65
                         // If better then currentBest
