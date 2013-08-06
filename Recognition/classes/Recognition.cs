@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -158,30 +158,32 @@ namespace Recognition
             {
                 PointW bestPoint = new PointW();
                 double currentBest = 9999999;
-                double ratioLabel = labelWidth / labelHeight;
+                double labelArea = labelWidth * labelHeight;
                 // Start border following: get the connected components (Contour<Point> contours)
                 for (Contour<Point> contours = result.FindContours(); contours != null; contours = contours.HNext)
                 {
                     // Construct a rectangle
                     // (top-left) point en  (bottom-right) point
                     Rectangle rect = contours.BoundingRectangle;
-                    double rectRatio = rect.Width / rect.Height;
+                    double rectDifference = Math.Abs(rect.Width - labelWidth) + Math.Abs(rect.Height - labelHeight);
+                    double rectAreaDifference = rectDifference + Math.Abs(labelArea - contours.Area);
+                    int rectArea = rect.Width * rect.Height;
+
                     // Check if the rectangle matches the expected size of label
                     if (
                         // If approximate size
-                        rect.Width > labelWidth - labelFault && rect.Width < labelWidth + labelFault
-                        && rect.Height > labelHeight - labelFault && rect.Height < labelHeight + labelFault
-                        // If approximate ratio
-                        && rectRatio >= ratioLabel - 2 && rectRatio <= ratioLabel + 2
+			            rectDifference <= labelFault
+                        // Area check with Formula of Green (with 35% error rate)
+                        && contours.Area / rectArea >= 0.65
                         // If better then currentBest
-                        && rectRatio < currentBest
+                        && rectAreaDifference < currentBest
                         )
                     {
-                        currentBest = rectRatio;
+                        currentBest = rectDifference;
                         bestPoint.p = new PointF(rect.X + rect.Width / 2, rect.Y + rect.Height / 2); ;
                     }
                 }
-
+                Console.WriteLine("---");
                 // If a bestpoint is found:
                 //  - draw a green rect on the image.
                 //  - look for the nearest point (increase it's frequency, or add as new point).
