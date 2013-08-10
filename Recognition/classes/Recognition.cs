@@ -69,10 +69,10 @@ namespace Recognition
                 labelHeight = Int32.Parse((string)properties.get("label_height"));
                 labelWidth = Int32.Parse((string)properties.get("label_width"));
                 labelFault = Int32.Parse((string)properties.get("label_fault"));
-                gaussianStd1 = Double.Parse((string)properties.get("gaussuan_smt"));
-                gaussianStd2 = Double.Parse((string)properties.get("gaussuan_smt2"));
-                highboundFrequency = Int32.Parse((string)properties.get("highbound_frequency"));
-                maxDistance = Int32.Parse((string)properties.get("max_distance_between_points"));
+                gaussianStd1 = Double.Parse((string)properties.get("gaussian_smt"));
+                gaussianStd2 = Double.Parse((string)properties.get("gaussian_smt2"));
+                highboundFrequency = Int32.Parse((string)properties.get("upper_limit_frequency"));
+                maxDistance = Int32.Parse((string)properties.get("max_distance"));
                 minimumChars = Int32.Parse((string)properties.get("min_char"));
                 maximumChars = Int32.Parse((string)properties.get("max_char"));
                 roiX = Int32.Parse((string)properties.get("roi_x"));

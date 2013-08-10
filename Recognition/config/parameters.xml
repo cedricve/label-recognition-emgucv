@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!-- Instellingen voor productiehal Gent -->
+<!-- Settings for productionhall Gent -->
 <parameters>
-  <!-- Region of interest: bereik waar rolnummer gezocht moet worden -->
+  <!-- Region of interest -->
   <roi_x>290</roi_x>
   <roi_y>160</roi_y>
   <roi_width>470</roi_width>
   <roi_height>300</roi_height>
-  <!-- Beeldverwerking parameters -->
+  <!-- Imageprocessing properties -->
   <dilate>20</dilate>
   <erode>31</erode>
-  <gaussuan_smt>1.5</gaussuan_smt>
-  <gaussuan_smt2>2.5</gaussuan_smt2>
-  <!-- Rolnummer eigenschappen -->
+  <gaussian_smt>1.5</gaussian_smt>
+  <gaussian_smt2>2.5</gaussian_smt2>
+  <!-- Rolnumber properties -->
   <label_width>40</label_width>
   <label_height>30</label_height>
   <label_fault>20</label_fault>
-  <!-- SearchTable: Interval tussen punten en maximum frequencie -->
-  <highbound_frequency>30</highbound_frequency>
-  <max_distance_between_points>300</max_distance_between_points>
-  <!-- Tesseract: minimaal en maximaal aantal karakters -->
+  <!-- SearchTable -->
+  <upper_limit_frequency>30</upper_limit_frequency>
+  <max_distance>300</max_distance>
+  <!-- Tesseract -->
   <min_char>6</min_char>
   <max_char>12</max_char>
 </parameters>
