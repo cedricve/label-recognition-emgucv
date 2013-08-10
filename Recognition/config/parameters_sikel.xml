@@ -17,7 +17,7 @@
   <label_fault>8</label_fault>
   <!-- SearchTable -->
   <upper_limit_frequency>20</upper_limit_frequency>
-  <max_distance>300</max_distance>
+  <max_distance>30</max_distance>
   <!-- Tesseract -->
   <min_char>4</min_char>
   <max_char>7</max_char>
