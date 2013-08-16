@@ -194,10 +194,10 @@ namespace Recognition
             txtLabelHeight.Text = (string)properties.get("label_height");
             txtLabelWidth.Text = (string)properties.get("label_width");
             txtLabelFault.Text = (string)properties.get("label_fault");
-            txtGaussianStd1.Text = (string)properties.get("gaussuan_smt");
-            txtGaussianStd2.Text = (string)properties.get("gaussuan_smt2");
-            txtHighboundFrequency.Text = (string)properties.get("highbound_frequency");
-            txtMaxDistance.Text = (string)properties.get("max_distance_between_points");
+            txtGaussianStd1.Text = (string)properties.get("gaussian_smt");
+            txtGaussianStd2.Text = (string)properties.get("gaussian_smt2");
+            txtHighboundFrequency.Text = (string)properties.get("upper_limit_frequency");
+            txtMaxDistance.Text = (string)properties.get("max_distance");
             txtMinimumChars.Text = (string)properties.get("min_char");
             txtMaximumChars.Text = (string)properties.get("max_char");
             txtRoiX.Text = (string)properties.get("roi_x");
